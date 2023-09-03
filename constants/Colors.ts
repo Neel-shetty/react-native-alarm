@@ -15,5 +15,7 @@ export default {
     tint: tintColorDark,
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
+    bgGradientTop: '#363E46',
+    bgGradientBottom: '#2C343C',
   },
 };
