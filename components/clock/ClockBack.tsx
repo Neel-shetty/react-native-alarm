@@ -1,13 +1,16 @@
 import { View, Text, useWindowDimensions } from 'react-native'
 import React from 'react'
+import { Canvas, Fill } from '@shopify/react-native-skia'
 
-const {height,width} = useWindowDimensions()
 
 const ClockBack = () => {
+
+  const {height,width} = useWindowDimensions()
+
   return (
-    <View>
-      <Text>ClockBack</Text>
-    </View>
+    <Canvas>
+      <Fill color="red" />
+    </Canvas>
   )
 }
 

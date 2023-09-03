@@ -3,22 +3,25 @@ import React from "react";
 import {Canvas, Circle, Group} from "@shopify/react-native-skia";
 import { LinearGradient } from 'expo-linear-gradient';
 import Colors from "../constants/Colors";
+import Clock from "../components/clock/Clock";
 
 const index = () => {
   return (
-  <View style={styles.root}>
-      <LinearGradient
-        // Background Linear Gradient
-        colors={[Colors.dark.bgGradientTop, Colors.dark.bgGradientBottom]}
-        style={styles.background}
-        start={{x: 0.5, y: 0.5}}
-      >
-        <Text style={{color:'white'}}>
-          Open up App.tsx to start working on your app!
-        </Text>
-      </LinearGradient>
-
-  </View>
+  // <View style={styles.root}>
+  //     <LinearGradient
+  //       // Background Linear Gradient
+  //       colors={[Colors.dark.bgGradientTop, Colors.dark.bgGradientBottom]}
+  //       style={styles.background}
+  //       start={{x: 0.5, y: 0.5}}
+  //     >
+  //       <Text style={{color:'white'}}>
+  //         Open up App.tsx to start working on your app!
+  //       </Text>
+  //     </LinearGradient>
+  // </View>
+      <>
+        <Clock/>
+      </>
   );
 };
 
